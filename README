@@ -1,4 +1,4 @@
-#Using this method to manage the git repositories locally on each computer:
+#Using the HN method to manage the git repositories locally on each computer:
 
 #Creating them if they don't already exist:
     git init --bare $HOME/.myconf
