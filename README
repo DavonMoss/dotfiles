@@ -1,0 +1,18 @@
+#Using this method to manage the git repositories locally on each computer:
+
+#Creating them if they don't already exist:
+    git init --bare $HOME/.myconf
+    alias dotfile_config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
+    dotfile_config config status.showUntrackedFiles no
+
+#Managing the repository like normal, just using the alias name instead of 'git':
+    dotfile_config status
+    dotfile_config add .vimrc
+    dotfile_config commit -m "Add vimrc"
+    dotfile_config add .config/redshift.conf
+    dotfile_config commit -m "Add redshift config"
+    dotfile_config push
+
+#Setting up the remote link between local repository and this one, and pushing for the first time:
+    dotfile_config remote add origin https://davonmoss:<pat token>@github.com/DavonMoss/dotfiles.git
+    dotfile_config push -u origin main
