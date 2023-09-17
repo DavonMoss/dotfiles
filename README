@@ -1,3 +1,8 @@
+Current environment:
+    tmux
+    vim (with clipboard compiled in)
+    alacritty
+
 #Using the HN method to manage the git repositories locally on each computer:
 
 #Creating them if they don't already exist:
