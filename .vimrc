@@ -2,4 +2,11 @@ set relativenumber
 set number
 set laststatus=2
 set statusline+=%F
+set autoindent
+set shiftwidth=4
+set tabstop=4
+set incsearch
+set wildmode=longest,list,full
+set clipboard^=unnamed,unnamedplus
+set nowrap
 syntax on

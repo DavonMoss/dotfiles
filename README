@@ -21,3 +21,6 @@ Current environment:
 #Setting up the remote link between local repository and this one, and pushing for the first time:
     dotfile_config remote add origin https://davonmoss:<pat token>@github.com/DavonMoss/dotfiles.git
     dotfile_config push -u origin main
+
+#Pulling the dotfiles down to new machine
+    dotfile_config pull origin main
